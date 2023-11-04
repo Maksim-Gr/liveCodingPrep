@@ -1,9 +1,8 @@
-package main
-
-import "fmt"
+package palindrome
 
 // Check the valid palindrome using two pointers approach
 
+// IsValidPalindrome method to check if string is valid palindrome
 func IsValidPalindrome(inputString string) bool {
 	left := 0
 	right := len(inputString) - 1
@@ -15,13 +14,4 @@ func IsValidPalindrome(inputString string) bool {
 		right--
 	}
 	return true
-}
-
-func main() {
-	str := []string{"ABC", "A", "ABC"}
-	for i, s := range str {
-		fmt.Printf("Test Case # %d\n", i+1)
-		fmt.Printf("\nIs it a palindrome?.....%v\n", IsValidPalindrome(s))
-	}
-
 }
