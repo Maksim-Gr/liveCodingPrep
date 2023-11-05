@@ -1,4 +1,4 @@
-package palindrome
+package pointers
 
 // Check the valid palindrome using two pointers approach
 

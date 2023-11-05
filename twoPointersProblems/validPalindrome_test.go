@@ -1,4 +1,4 @@
-package palindrome
+package pointers
 
 import "testing"
 
