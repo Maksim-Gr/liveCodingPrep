@@ -4,7 +4,8 @@ import "sort"
 
 //Given a slice of integers find a triplet whose sum is equal to the target
 
-func findSumOfThree(nums []int, target int) bool {
+// FindSumOfThree
+func FindSumOfThree(nums []int, target int) bool {
 	// sort the input slice
 	sort.Sort(sort.IntSlice(nums))
 	low, high, triple := 0, 0, 0
