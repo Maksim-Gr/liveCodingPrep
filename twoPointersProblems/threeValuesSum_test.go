@@ -10,9 +10,9 @@ func TestThreeValuesSum(t *testing.T) {
 		sum   int
 		want  bool
 	}{
-		{"Should return false", {3, 7, 1, 2, 8, 4, 5}, 34, false},
-		{"Should return false", {3, 7, 1, 2, 8, 4, 5}, 34, false},
-		{"Should return false", {3, 7, 1, 2, 8, 4, 5}, 34, false},
+		{"Should return false", []int{3, 7, 1, 2, 8, 4, 5}, 34, false},
+		{"Should return false", []int{3, 7, 1, 2, 8, 4, 5}, 34, false},
+		{"Should return false", []int{3, 7, 1, 2, 8, 4, 5}, 34, false},
 	}
 	for _, tt := range testCases {
 		t.Run(tt.name, func(t *testing.T) {
