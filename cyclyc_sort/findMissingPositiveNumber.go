@@ -11,7 +11,7 @@ func smallestMissingPositiveInteger(nums []int) int {
 			i++
 		}
 	}
-
+	// iterate over array and find if the element is equal to its index plus one
 	for i := 0; i < len(nums); i++ {
 		if i+1 != nums[i] {
 			return i + 1
