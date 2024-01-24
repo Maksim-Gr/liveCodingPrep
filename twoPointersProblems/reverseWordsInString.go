@@ -6,7 +6,24 @@ import (
 )
 
 func ReverseWordsInString(sentence string) string {
-	trimmedSentence := trimStri
+	trimmedSentence := trimString(sentence)
+	sentenceBytes := []byte(trimmedSentence)
+	strLen := len(sentenceBytes)
+	sentenceBytes = strRev(sentenceBytes, 0, strLen-1)
+	start, end := 0, 0
+
+	for start < strLen {
+
+		for end < strLen && sentenceBytes[end] != ' ' {
+			end += 1
+		}
+
+		// Let's call our helper function to reverse the word in-place.
+		strRev(sentenceBytes, start, end-1)
+		start = end + 1
+		end += 1
+	}
+	return string(sentenceBytes)
 }
 
 func trimString(str string) string {
