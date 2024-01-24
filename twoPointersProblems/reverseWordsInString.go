@@ -17,3 +17,15 @@ func trimString(str string) string {
 
 	return str
 }
+
+func strRev(str []byte, startRev int, endRev int) []byte {
+	for startRev < endRev {
+		temp := str[startRev]
+		str[startRev] = str[endRev]
+		str[endRev] = temp
+
+		startRev += 1
+		endRev -= 1
+	}
+	return str
+}
